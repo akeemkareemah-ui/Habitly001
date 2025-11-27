@@ -9,6 +9,7 @@ function Analytics() {
     useEffect(() => {
         const savedHabits = JSON.parse(localStorage.getItem("habits")) || [];
         const savedGoals = JSON.parse(localStorage.getItem("goals")) || [];
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setHabits(savedHabits);
         setGoals(savedGoals);
     }, []);

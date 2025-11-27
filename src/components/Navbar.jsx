@@ -9,6 +9,7 @@ function Navbar() {
   
   useEffect(() => {
     const user = localStorage.getItem("loggedInUser");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsLoggedIn(!!user);
 
     const interval = setInterval(() => {

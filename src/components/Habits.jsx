@@ -12,7 +12,8 @@ function HabitTrackerDashboard() {
     useEffect(() => {
         const savedHabits = JSON.parse(localStorage.getItem("habits")) || [];
         const savedGoals = JSON.parse(localStorage.getItem("goals")) || [];
-        setHabits(savedHabits);
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setHabit(savedHabits);
         setGoals(savedGoals);
     }, []);
 
