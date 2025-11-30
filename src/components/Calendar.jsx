@@ -8,6 +8,7 @@ function CalendarView() {
 
   useEffect(() => {
     const savedHabits = JSON.parse(localStorage.getItem("habits")) || [];
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHabits(savedHabits);
   }, []);
 

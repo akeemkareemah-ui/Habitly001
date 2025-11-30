@@ -101,11 +101,12 @@ function Navbar() {
     <nav style={navStyle}>
    
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <IoLeafOutline style={{ width: '35px', height: '30px', color: '#009688' }} />
 
-        <NavLink to="/" style={{ fontFamily:'initial', fontWeight: '650', fontSize: '30px', color: '#004D40', textDecoration: 'none' }}>
+        <IoLeafOutline style={{ width: '35px', height: '30px', color: '#009688' }} />
+         <NavLink to="/" style={{ fontFamily:'initial', fontWeight: '650', fontSize: '30px', color: '#004D40', textDecoration: 'none' }}>
           HABITLY
         </NavLink>
+
       </div>
 
   
@@ -113,7 +114,7 @@ function Navbar() {
         <NavLink to="/features" style={({ isActive }) => isActive ? { ...linkStyle, ...activeLinkStyle } : linkStyle}>Features</NavLink>
         {isLoggedIn && (
           <>
-            <NavLink to="/dashboard" style={({ isActive }) => isActive ? { ...linkStyle, ...activeLinkStyle } : linkStyle}>Dashboard</NavLink>
+          <NavLink to="/dashboard" style={({ isActive }) => isActive ? { ...linkStyle, ...activeLinkStyle } : linkStyle}>Dashboard</NavLink>
           </>
         )}
         <NavLink to="/pricing" style={({ isActive }) => isActive ? { ...linkStyle, ...activeLinkStyle } : linkStyle}>Pricing</NavLink>
